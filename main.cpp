@@ -1,4 +1,3 @@
-#define _WIN32_WINNT 0x0500
 #include <SFML/Graphics.hpp>
 #include <windows.h>
 #include "GameBoard.h"
@@ -6,8 +5,6 @@
 
 int main()
 {
-    HWND hWnd = GetConsoleWindow();
-    ShowWindow(hWnd, SW_HIDE);
 
     OpeningScene openingScene;
     sf::RenderWindow openingWindow(sf::VideoMode(400, 400), "Choose Level", sf::Style::Titlebar | sf::Style::Close);
